@@ -2,9 +2,10 @@ cmake_minimum_required(VERSION 3.4...3.18)
 project(randpartial)
 set(CMAKE_CXX_STANDARD 11)
 
-add_subdirectory(pybind11)
-# find_package(pybind11 REQUIRED)
-include_directories(/usr/include/python3.6m)
+# add_subdirectory(pybind11)
+find_package(pybind11 REQUIRED)
+include_directories(/home/rsanku/miniconda3/envs/xmf/include/python3.8)
+#include_directories(/usr/include/python3.6m)
 # include_directories(/opt/conda/include/python3.8)
 find_package(PCL REQUIRED)
 
